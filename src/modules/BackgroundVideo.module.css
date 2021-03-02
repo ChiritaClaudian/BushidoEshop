@@ -1,0 +1,49 @@
+@font-face{
+    font-family: "Roboto-Medium";
+    src: local("Roboto-Medium"),
+        url("../resources/RobotoFont/Roboto-Medium.ttf") format("truetype");
+        font-weight: normal;
+}
+
+.video{
+   
+    z-index: -1;
+    top: 0;
+    margin-bottom: auto;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    position:absolute;
+}
+
+.content{
+    color: #ffffff;
+    font-size: 250%;
+    
+    font-family: Roboto-Medium; 
+}
+
+.container{
+    position: relative;
+    z-index:-2;
+    padding-right: 0;
+    padding-left: 0;
+    min-height: 100vh; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+.secodnContainer{
+    
+   margin-right:auto;
+   margin-left:30%;
+}
+
+.buttons{
+    padding-left: 40%;
+}
+
+
+
+
