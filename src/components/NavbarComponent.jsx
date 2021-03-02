@@ -5,7 +5,7 @@ import "bootstrap"
 function NavbarComponent()
 {
     return (
-      <Navbar bg="light" expand="lg" className="">
+      <Navbar bg="light" expand="lg" sticky="top">
         <Navbar.Brand href="#home">Bushido-Eshop</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

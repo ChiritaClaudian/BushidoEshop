@@ -16,15 +16,15 @@ function MainPage()
             <BackgroundVideo />
             <Container fluid className={classes.featureContainer}>
                 <Row>
-                    <Col>
+                    <Col md>
                         {/*  Best Protection Equipment  */}
                         <FeatureCard imageURL={URL.equipmentURL} feature="Best Protective Equipment" paragraph="We got the best equipment suited for your fighting skills"/>
                     </Col>
-                    <Col>
+                    <Col md>
                         {/* Best Material */}
-                        <FeatureCard/>
+                        <FeatureCard imageURL={URL.materialURL} feature="Best Material" paragraph="The best material is used for all the products sold in the Bushido E-Shop"/>
                     </Col>
-                    <Col>
+                    <Col md>
                         {/* Act like a PRO*/}
                         <FeatureCard/>
                     </Col>

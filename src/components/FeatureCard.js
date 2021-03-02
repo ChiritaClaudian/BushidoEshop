@@ -5,8 +5,8 @@ import {Card} from "react-bootstrap"
 function FeatureCard(props)
 {
     return(
-       <Card style={{width: '18rem'}}>
-            <Card.Img variant="top" src={props.imageURL} />
+       <Card className={classes.card}>
+            <Card.Img variant="top" src={props.imageURL} className={classes.image} />
             <Card.Body>
                 <Card.Title>{props.feature}</Card.Title>
                 <Card.Text>
