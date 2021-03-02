@@ -1,7 +1,37 @@
-.featureContainer{
-    padding: 15%;
-    background-color: rgb(239, 245, 245);
-    
+@font-face{
+    font-family: "Roboto-Medium";
+    src: local("Roboto-Medium"),
+        url("../resources/RobotoFont/Roboto-Light.ttf") format("truetype");
+        font-weight: normal;
 }
 
+@font-face{
+    font-family: "Roboto-Italic";
+    src: local("Roboto-Italic"),
+        url("../resources/RobotoFont/Roboto-Italic.ttf") format("truetype");
+        font-weight: normal;
+}
+
+.featureContainer{
+    padding: 10% 15%;
+    background-color: rgb(239, 245, 245);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  
+    flex-grow: 0;
+}
+
+.featureText{
+    font-size: 250%;
+    font-family: Roboto-Light; 
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.featureButton{
+    font-size: 125%;
+    font-family: Roboto-Italic;
+    margin-top: 5%;
+}
 
