@@ -1,0 +1,13 @@
+.box {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 1;
+ -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.innerContent{
+    margin: 10px;
+}

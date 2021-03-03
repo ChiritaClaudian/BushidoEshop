@@ -31,12 +31,12 @@ function BackgroundVideo(props)
                     </Row>
                     <Row className="justify-content-md-center">
                         <Col className={classes.buttons}>
-                            <Button variant="light">
+                            <Button variant="light" style={{margin:"1%"}}>
                                 Shop Now
                             </Button>{' '}
-                            <Button variant="light">
+                            <Button variant="light" style={{margin:"1%"}}>
                                 Learn more
-                            </Button>{' '}
+                            </Button>{' '}}
                         </Col>    
                     </Row>
                 </Container>
@@ -55,10 +55,10 @@ function BackgroundVideo(props)
                     </Row>
                     <Row className="justify-content-md-center">
                         <Col className={classes.buttons}>
-                            <Button variant="light">
+                            <Button variant="light" style={{margin:"1%"}}>
                                 Shop Now
                             </Button>{' '}
-                            <Button variant="light">
+                            <Button variant="light" style={{margin:"1%"}}>
                                 Learn more
                             </Button>{' '}
                         </Col>
