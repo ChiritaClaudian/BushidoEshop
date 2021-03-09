@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
-import {Button, Container, Row, Col} from 'react-bootstrap'
+import {Button} from 'react-bootstrap'
 import 'bootstrap'
-import {classes} from '../modules/CategoryImage.module.css'
+
 function CategoryImage(props)
 {
     const containerNoOpacity={
@@ -9,7 +9,7 @@ function CategoryImage(props)
         width:'375px',
         height:'375px',
         backgroundImage: `url(${props.image})`, 
-        zIndex:'0',
+        zIndex:'1',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         poisiton: 'absolute'
@@ -24,7 +24,7 @@ function CategoryImage(props)
         backgroundImage: `url(${props.image})`, 
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
-        zIndex: '0',
+        zIndex: '1',
         position:'absolute'
        
     }
@@ -46,25 +46,27 @@ function CategoryImage(props)
     
     const [isHovered, setHover] = useState(false);
     return(
-        <div style={{margin:"10%"}}>
-            <div style={isHovered ? containerWithOpacity : containerNoOpacity} 
-                onMouseEnter={()=>setHover(true)} 
-                onMouseLeave={()=>setHover(false)}>
+        <div style={{position:"relative"}}>
+            <div style={{margin:"10%"}}>
+                <div style={isHovered ? containerWithOpacity : containerNoOpacity} 
+                    onMouseEnter={()=>setHover(true)} 
+                    onMouseLeave={()=>setHover(false)}>
+                </div>
+                
+                        <div onMouseEnter={()=>setHover(true)} 
+                            onMouseLeave={()=>setHover(false)} 
+                            style={isHovered ? itemsInvisible : itemsVisible}>
+                            
+
+                            <h3 style={{color:'white'}}>
+                                {props.header}
+                            </h3>
+
+                            <Button style={{marginLeft:'15%'}} variant='outline-light'> Shop </Button>{' '}
+                        </div>
+                
+                
             </div>
-            
-                    <div onMouseEnter={()=>setHover(true)} 
-                        onMouseLeave={()=>setHover(false)} 
-                        style={isHovered ? itemsInvisible : itemsVisible}>
-                         
-
-                        <h3 style={{color:'white'}}>
-                            {props.header}
-                        </h3>
-
-                        <Button style={{marginLeft:'15%'}} variant='outline-light'> Shop </Button>{' '}
-                    </div>
-            
-            
         </div>
     );
 }

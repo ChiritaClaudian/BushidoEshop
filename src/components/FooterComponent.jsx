@@ -1,5 +1,6 @@
 import React from 'react'
 import {Row, Col, Container} from 'react-bootstrap'
+import {Link} from 'react-router-dom'
 import {AiOutlineFacebook, AiOutlineInstagram, AiOutlineTwitter} from 'react-icons/ai'
 function FooterComponent()
 {
@@ -16,13 +17,13 @@ function FooterComponent()
                         </h5>
                         {/* Aici ar trb sa fie o lista cu link-uri cu Shop About us si Home Page*/}
                         <p>
-                            Home Page
+                            <Link to="/">Home Page</Link>
                         </p>
                         <p>
-                            Market place
+                            <Link to="/Market">Market place</Link>
                         </p>
                         <p>
-                            About us
+                            <Link to="/AboutUs">About us</Link>
                         </p>
                     </Col>
                     <Col >

@@ -7,6 +7,7 @@ import { Container, Row, Col, Button } from 'react-bootstrap'
 import '../resources/RobotoFont/Roboto-Medium.ttf'
 import {useMediaQuery} from 'react-responsive'
 import backgroundImage from '../resources/bushido_cover.jpg'
+import { useHistory } from "react-router-dom"
 
 function BackgroundVideo(props)
 {
@@ -17,6 +18,7 @@ function BackgroundVideo(props)
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat'
     }
+    const history = useHistory();
     
     if(isTabletOrMobile)
         return(
@@ -31,12 +33,12 @@ function BackgroundVideo(props)
                     </Row>
                     <Row className="justify-content-md-center">
                         <Col className={classes.buttons}>
-                            <Button variant="light" style={{margin:"1%"}}>
+                            <Button variant="light" style={{margin:"1%"}} onClick={()=>{history.push("/Market");}}>
                                 Shop Now
                             </Button>{' '}
-                            <Button variant="light" style={{margin:"1%"}}>
+                            <Button variant="light" style={{margin:"1%"}} onClick={()=>{history.push("/About");}}>
                                 Learn more
-                            </Button>{' '}}
+                            </Button>{' '}
                         </Col>    
                     </Row>
                 </Container>
@@ -55,10 +57,10 @@ function BackgroundVideo(props)
                     </Row>
                     <Row className="justify-content-md-center">
                         <Col className={classes.buttons}>
-                            <Button variant="light" style={{margin:"1%"}}>
+                            <Button variant="light" style={{margin:"1%"}} onClick={()=>{history.push("/Market");}}>
                                 Shop Now
                             </Button>{' '}
-                            <Button variant="light" style={{margin:"1%"}}>
+                            <Button variant="light" style={{margin:"1%"}} onClick={()=>{history.push("/About");}}>
                                 Learn more
                             </Button>{' '}
                         </Col>
