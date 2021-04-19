@@ -49,25 +49,25 @@ function MainPage()
                 </Container>
             </div>
                 <Container >
-                 <Row className="justify-content-md-center ">
+                 <Row className="justify-content-md-center " style={{position:'relative'}}>
                         <p className={classes.featureText}>
                             Categories from Bushido Eshop.
                         </p>
                     </Row>
                     
                     <Row >
-                        <Col >
+                        <Col md={6} sm={12} >
                             <CategoryImage image={karateImage} header="KARATE"/>
                         </Col>
-                        <Col >
+                        <Col md={6} sm={12} >
                             <CategoryImage image={mmaImage} header="MMA"/>
                         </Col>
                     </Row>
                     <Row  >
-                        <Col >
+                        <Col md={6} sm={12} >
                             <CategoryImage image={kickboxImage} header="KICKBOX"/>
                         </Col>
-                        <Col >
+                        <Col md={6} sm={12} >
                             <CategoryImage image={judoImage} header="JUDO"/>
                         </Col>
                     </Row>

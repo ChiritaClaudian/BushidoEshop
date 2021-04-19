@@ -22,8 +22,9 @@ function BackgroundVideo(props)
     
     if(isTabletOrMobile)
         return(
-            <div className={classes.container} style={imageStyle}>
-                <Container fluid="md" className=" align-self-center justify-content-md-center ">
+            <div className={classes.container}>
+                <img src={backgroundImage} style={{width:'100%'}}/>
+                <Container fluid="md" className=" align-self-center justify-content-md-center " style={{position:'absolute'}}>
                     <Row className="py-auto justify-content-md-center ">
                         <Col md="auto" >
                             <p className={classes.content}>
@@ -47,7 +48,10 @@ function BackgroundVideo(props)
     else
         return(
             <div className={classes.container} > 
-                <Container fluid="md" className=" align-self-center justify-content-md-center ">
+                <video autoPlay loop muted className={classes.video}>
+                    <source src={backgroundVideo} type='video/mp4'/>
+                </video>
+                <Container fluid="md" className=" align-self-center justify-content-md-center " style={{position:"absolute"}}>
                     <Row className="py-auto justify-content-md-center ">
                         <Col md="auto" >
                             <p className={classes.content}>
@@ -68,9 +72,7 @@ function BackgroundVideo(props)
                     
                     </Row>
                 </Container>
-                <video autoPlay loop muted className={classes.video}>
-                    <source src={backgroundVideo} type='video/mp4'/>
-                </video>
+                
             </div>
         );
 }

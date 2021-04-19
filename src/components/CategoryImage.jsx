@@ -1,70 +1,61 @@
 import React, {useState} from 'react'
 import {Button} from 'react-bootstrap'
+import {useMediaQuery} from 'react-responsive'
 import 'bootstrap'
 
 function CategoryImage(props)
 {
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
     const containerNoOpacity={
-      
-        width:'375px',
-        height:'375px',
-        backgroundImage: `url(${props.image})`, 
-        zIndex:'1',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        poisiton: 'absolute'
-
-        }
-
-    const containerWithOpacity={
-        
-        width:'375px',
-        height:'375px',
-        filter: 'blur(7px)',
-        backgroundImage: `url(${props.image})`, 
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        zIndex: '1',
-        position:'absolute'
-       
+        zIndex:'1'
     }
 
-    const itemsVisible={
-        display: 'none',
-        position: 'absolute',
-        zIndex: '3'
-        
+    const containerWithOpacity={
+        filter: 'blur(4px)',
+        zIndex: '1'
     }
 
     const itemsInvisible={
-        display: 'inline',
+        top:'50%',
+        transform:'translate(-50%, -50%)',
+        left:'50%',
+        display: 'none',
         position: 'absolute',
         zIndex: '3',
-        margin: '150px'
+        
+        
+    }
+
+    const itemsVisible={
+        top:'50%',
+        transform:'translate(-50%, -50%)',
+        left:'50%',
+        display: 'block',
+        position: 'absolute',
+        zIndex: '3',
+       
+        
     }
 
     
     const [isHovered, setHover] = useState(false);
     return(
-        <div style={{position:"relative"}}>
-            <div style={{margin:"10%"}}>
-                <div style={isHovered ? containerWithOpacity : containerNoOpacity} 
-                    onMouseEnter={()=>setHover(true)} 
-                    onMouseLeave={()=>setHover(false)}>
+        <div style={{position:"relative"}} >
+            <div style={{margin:"10%", position:'relative'}} onMouseEnter={()=>setHover(true)} 
+                    onMouseLeave={()=>setHover(false)} >
+                <div style={isHovered || isTabletOrMobile ? containerWithOpacity : containerNoOpacity } 
+                    >
+                    <img src={props.image} style={{width:'100%'}}/>
                 </div>
                 
-                        <div onMouseEnter={()=>setHover(true)} 
-                            onMouseLeave={()=>setHover(false)} 
-                            style={isHovered ? itemsInvisible : itemsVisible}>
-                            
+                <div style={isHovered || isTabletOrMobile ? itemsVisible : itemsInvisible} className="d-flex flex-column ">
+                    
+                    <h3 style={{color:'white'}}>
+                        {props.header}
+                    </h3>
 
-                            <h3 style={{color:'white'}}>
-                                {props.header}
-                            </h3>
-
-                            <Button style={{marginLeft:'15%'}} variant='outline-light'> Shop </Button>{' '}
-                        </div>
-                
+                    <Button variant='outline-light'> Shop </Button>{' '}
+                </div>
                 
             </div>
         </div>
