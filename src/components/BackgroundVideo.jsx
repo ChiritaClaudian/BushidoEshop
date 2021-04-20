@@ -28,7 +28,7 @@ function BackgroundVideo(props)
                     <Row className="py-auto justify-content-md-center ">
                         <Col md="auto" >
                             <p className={classes.content}>
-                                Wellcome to the Busho E-shop 
+                                Welcome to the Busho E-shop 
                             </p>
                         </Col>
                     </Row>
@@ -55,7 +55,7 @@ function BackgroundVideo(props)
                     <Row className="py-auto justify-content-md-center ">
                         <Col md="auto" >
                             <p className={classes.content}>
-                                Wellcome to the Bushido E-shop 
+                                Welcome to the Bushido E-shop 
                             </p>
                         </Col>
                     </Row>

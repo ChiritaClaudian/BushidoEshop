@@ -1,5 +1,4 @@
 import React from 'react'
-import NavbarComponent from '../components/NavbarComponent'
 import {Row, Col, Container} from 'react-bootstrap'
 import ShopItem from '../components/ShopItem'
 
@@ -18,7 +17,6 @@ function MarketPage()
     }
     return(
         <div>
-            <NavbarComponent/>
             <Container style={{alignItems:"center", padding:"10%"}} >
                 <Row className="justify-content-md-center ">
                     <Col className="mx-auto" >

@@ -1,12 +1,10 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import NavbarComponent from '../components/NavbarComponent'
 import FooterComponent from '../components/FooterComponent'
 function AboutPage()
 {
     return(
         <React.Fragment>
-            <NavbarComponent/>
             <div style={{padding:"10%", margin:"5%"}}>
                 <Container fluid="md" className=" align-self-center justify-content-md-center ">
                     <Row className="justify-content-md-center " style={{alignItems:"center"}}>
@@ -22,7 +20,6 @@ function AboutPage()
                     </Row>
                 </Container>
             </div>
-            <FooterComponent/>
         </React.Fragment>
     );
 }

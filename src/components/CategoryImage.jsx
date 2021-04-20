@@ -6,35 +6,21 @@ import 'bootstrap'
 function CategoryImage(props)
 {
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
-    const containerNoOpacity={
-        zIndex:'1'
-    }
+    
 
     const containerWithOpacity={
-        filter: 'blur(4px)',
-        zIndex: '1'
+        filter: 'blur(4px)'
     }
 
-    const itemsInvisible={
-        top:'50%',
-        transform:'translate(-50%, -50%)',
-        left:'50%',
-        display: 'none',
-        position: 'absolute',
-        zIndex: '3',
-        
-        
-    }
+   
 
     const itemsVisible={
         top:'50%',
         transform:'translate(-50%, -50%)',
         left:'50%',
         display: 'block',
-        position: 'absolute',
-        zIndex: '3',
-       
-        
+        position: 'absolute'
+
     }
 
     
@@ -43,17 +29,16 @@ function CategoryImage(props)
         <div style={{position:"relative"}} >
             <div style={{margin:"10%", position:'relative'}} onMouseEnter={()=>setHover(true)} 
                     onMouseLeave={()=>setHover(false)} >
-                <div style={isHovered || isTabletOrMobile ? containerWithOpacity : containerNoOpacity } 
+                <div style={isHovered || isTabletOrMobile ? containerWithOpacity : {}} 
                     >
                     <img src={props.image} style={{width:'100%'}}/>
                 </div>
                 
-                <div style={isHovered || isTabletOrMobile ? itemsVisible : itemsInvisible} className="d-flex flex-column ">
-                    
+                <div style={isHovered || isTabletOrMobile ? itemsVisible:{display:'none'}} className="d-flex flex-column ">
+    
                     <h3 style={{color:'white'}}>
                         {props.header}
                     </h3>
-
                     <Button variant='outline-light'> Shop </Button>{' '}
                 </div>
                 

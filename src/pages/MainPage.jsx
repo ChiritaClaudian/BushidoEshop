@@ -18,7 +18,7 @@ function MainPage()
 {
     return (
         <React.Fragment>
-            <NavBar/>
+            
             <BackgroundVideo />
             <div className={classes.featureContainer}>
                 <Container fluid="md" className=" align-self-center justify-content-md-center " >
@@ -72,9 +72,6 @@ function MainPage()
                         </Col>
                     </Row>
                 </Container>
-            <div>
-                <FooterComponent/>
-            </div>
         </React.Fragment>
     );
 }

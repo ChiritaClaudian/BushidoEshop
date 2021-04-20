@@ -30,6 +30,11 @@ function ShopItem(props)
                         {priceText}
                     </Col>
                 </Row>
+                <Row>
+                    <Col>
+                        
+                    </Col>
+                </Row>
 
             </Container>
         </div>
