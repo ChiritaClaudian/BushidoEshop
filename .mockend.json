@@ -1,0 +1,61 @@
+{
+    "Produse":{
+        "Produs1":{
+            "nume" : "MMA Viper Challanger",
+            "pret" : "100",
+            "reviews" : "33",
+            "src" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAU2QsvznUzL_ItUYmzMXAeLrNDpTWDMVAfFXoyhQFjb-ovi2cgy2rg6Nl0Q&usqp=CAc",
+            "categorie" : "MMA",
+            "alt" : "MMA Viepr Challanger"
+        },
+        "Produs2":{
+            "nume" : "Box Viper Challanger 3.0",
+            "pret" : "125",
+            "reviews" : "70",
+            "src" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTZMOO5CXJlamV0lfFdYxpG3tLwiHOC2134UXLb4IhCk5JtHYJOwLoTcEAK9v1Ncku3lQigNk&usqp=CAc",
+            "categorie" : "Box",
+            "alt" : "BOX Viepr Challanger 3.0"
+        },
+        "Produs3":{
+            "nume" : "Box Viper Contender",
+            "pret" : "115",
+            "reviews" : "118",
+            "src" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwQQ73HnV6APsCNhE0ngQDGl3y8wt9R77uhrNjUCVls4_oT9oBuoY6RDoPzw&usqp=CAc",
+            "categorie" : "Box",
+            "alt" : "Box Viepr Contender"
+        },
+        "Produs4":{
+            "nume" : "Judo Gi White",
+            "pret" : "80",
+            "reviews" : "44",
+            "src" : "data:image/jpeg;base64,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",
+            "categorie" : "Judo",
+            "alt" : "Judo Gi White"
+        },
+        "Produs5":{
+            "nume" : "Judo Gi Blue",
+            "pret" : "80",
+            "reviews" : "97",
+            "src" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8gS7mDIzjLJz9vRiHpkywTx4lFwsLt9QcdQ&usqp=CAU",
+            "categorie" : "Judo",
+            "alt" : "Judo Gi Blue"
+        },
+        "Produs6":{
+            "nume" : "Shin guard Skintex",
+            "pret" : "35",
+            "reviews" : "97",
+            "src" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVpmyQk4oD81zV8Slx5XN11RiUpTKNDU7mekv-ZStKMjPIO4HbBz8wCFe0e0j_pqYvzWDoMBOz&usqp=CAcU",
+            "categorie" : "Kickbox",
+            "alt" : "Shin guard Skintexe"
+        },
+        "Produs7":{
+            "nume" : "Chest Guard",
+            "pret" : "50",
+            "reviews" : "97",
+            "src" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0NQdmB8BZtx-nm1vPSGUPEarEHoLC8m5YXA&usqp=CAU",
+            "categorie" : "Kickbox",
+            "alt" : "Chest Guard"
+        }
+    }
+    
+}
