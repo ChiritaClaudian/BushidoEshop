@@ -17,13 +17,22 @@ function FooterComponent()
                         </h5>
                         {/* Aici ar trb sa fie o lista cu link-uri cu Shop About us si Home Page*/}
                         <p>
-                            <Link to="/">Home Page</Link>
+                            <Link to={()=>{
+                                window.scrollTo(0,0);
+                                return "/";
+                            }}>Home Page</Link>
                         </p>
                         <p>
-                            <Link to="/Market">Market place</Link>
+                            <Link to={()=>{
+                                window.scrollTo(0,0);
+                                return "/Market";
+                            }}>Market place</Link>
                         </p>
                         <p>
-                            <Link to="/AboutUs">About us</Link>
+                            <Link to={()=>{
+                                window.scrollTo(0,0);
+                                return "/About";
+                            }}>About us</Link>
                         </p>
                     </Col>
                     <Col >

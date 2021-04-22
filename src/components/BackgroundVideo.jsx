@@ -27,8 +27,8 @@ function BackgroundVideo(props)
                 <Container fluid="md" className=" align-self-center justify-content-md-center " style={{position:'absolute'}}>
                     <Row className="py-auto justify-content-md-center ">
                         <Col md="auto" >
-                            <p className={classes.content}>
-                                Welcome to the Busho E-shop 
+                            <p style={{margin:"15%"}} className={classes.content}>
+                                Welcome to the Bushido E-shop 
                             </p>
                         </Col>
                     </Row>

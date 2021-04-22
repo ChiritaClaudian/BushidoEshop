@@ -4,7 +4,7 @@ function RegisterPage(){
     return(
         <div style={{margin:"10% 35%", display:'flex'}} className="d-flex flex-column">
             <form>
-                <h3>Login</h3>
+                <h3>Register</h3>
                 <div className="form-group">
                     <label>First name</label>
                     <input type="firstName" className="form-control" placeholder="Enter first name"/>
@@ -26,7 +26,7 @@ function RegisterPage(){
                     <input type="password" className="form-control" placeholder="Enter password"/>
                 </div>
 
-                <button style={{paddingLeft:"10%", paddingRight:"10%"}} type="submit" className="btn btn-primary btn-block">Login</button>
+                <button style={{paddingLeft:"10%", paddingRight:"10%"}} type="submit" className="btn btn-primary btn-block">Signed up</button>
             </form>
         </div>
     );

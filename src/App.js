@@ -10,6 +10,7 @@ import AboutPage from './pages/AboutPage'
 import LoginPage from './pages/LoginPage'
 import NavBar from './components/NavbarComponent'
 import RegisterPage from './pages/RegisterPage'
+import FooterComponent from './components/FooterComponent'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Route path="/login"><LoginPage/></Route>
       <Route path="/register"><RegisterPage/></Route>
     </Switch>
+    <FooterComponent/>
     </Router>
   );
 }

@@ -1,6 +1,7 @@
 {
-    "Produse":{
-        "Produs1":{
+    "Produse:":[
+        {
+            "id": "0",
             "nume" : "MMA Viper Challanger",
             "pret" : "100",
             "reviews" : "33",
@@ -8,7 +9,8 @@
             "categorie" : "MMA",
             "alt" : "MMA Viepr Challanger"
         },
-        "Produs2":{
+        {
+            "id":"1",
             "nume" : "Box Viper Challanger 3.0",
             "pret" : "125",
             "reviews" : "70",
@@ -16,7 +18,8 @@
             "categorie" : "Box",
             "alt" : "BOX Viepr Challanger 3.0"
         },
-        "Produs3":{
+        {
+            "id" : "2",
             "nume" : "Box Viper Contender",
             "pret" : "115",
             "reviews" : "118",
@@ -24,7 +27,8 @@
             "categorie" : "Box",
             "alt" : "Box Viepr Contender"
         },
-        "Produs4":{
+        {
+            "id" : "3",
             "nume" : "Judo Gi White",
             "pret" : "80",
             "reviews" : "44",
@@ -32,7 +36,8 @@
             "categorie" : "Judo",
             "alt" : "Judo Gi White"
         },
-        "Produs5":{
+        {
+            "id" : "4",
             "nume" : "Judo Gi Blue",
             "pret" : "80",
             "reviews" : "97",
@@ -40,7 +45,8 @@
             "categorie" : "Judo",
             "alt" : "Judo Gi Blue"
         },
-        "Produs6":{
+        {
+            "id" : "5",
             "nume" : "Shin guard Skintex",
             "pret" : "35",
             "reviews" : "97",
@@ -48,7 +54,8 @@
             "categorie" : "Kickbox",
             "alt" : "Shin guard Skintexe"
         },
-        "Produs7":{
+        {
+            "id" : "6",
             "nume" : "Chest Guard",
             "pret" : "50",
             "reviews" : "97",
@@ -56,6 +63,6 @@
             "categorie" : "Kickbox",
             "alt" : "Chest Guard"
         }
-    }
+    ]
     
 }

@@ -1,24 +1,44 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import {Row, Col, Container} from 'react-bootstrap'
 import ShopItem from '../components/ShopItem'
 
+async function getProduse(){
+    try {
+        let response = await fetch('https://6081334d73292b0017cdcea7.mockapi.io/shop');
+        let responseJson = await response.json();
+        return responseJson['0']['Produse'];
+   } catch(error) {
+    console.error(error);
+  }
+}
+
+
 function MarketPage()
 {
-    const itemsArray = []
-    let itemShop = {
-        src : "ceva url", 
-        alt : "o imagine super cool",
-        name: "un produs super cool",
-        reviews: "10",
-        price: "25"         
+
+    const [data, setData]=useState([]);
+    const getData=()=>{
+        fetch('https://6081334d73292b0017cdcea7.mockapi.io/shop')
+            .then(function(response){
+                console.log(response);
+                return response.json();
+            })
+            .then(function(myJson){
+                console.log(myJson);
+                setData(myJson);
+            });
     }
-    for(var i = 0; i < 10; i++){
-        itemsArray.push(itemShop)
-    }
+    useEffect(()=>{
+        getData()
+    }, []);
+    
+   
+
+    
     return(
         <div>
-            <Container style={{alignItems:"center", padding:"10%"}} >
-                <Row className="justify-content-md-center ">
+            <Container >
+                <Row  style={{alignItems:"center", padding:"10%"}} className="justify-content-md-center ">
                     <Col className="mx-auto" >
                         <h3 style={{marginLeft:"45%"}}>Shop</h3>
                         <p style={{textAlign:"center"}}>
@@ -28,6 +48,12 @@ function MarketPage()
  
                     </Col>
                 </Row>
+                <div className="d-flex flex-column">
+                    <Row >
+                      {data && data.length>0 && data[0]['Produse'].map((obj) => <Col key={obj.id} md={4} sm={6}><ShopItem image={obj.src} alt={obj.alt} name={obj.nume} reviews={obj.reviews} price={obj.pret}/></Col>)} 
+                    </Row>
+                </div>
+                
             </Container>
         </div>
     );
