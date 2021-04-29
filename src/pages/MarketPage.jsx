@@ -2,16 +2,6 @@ import React, {useState, useEffect} from 'react'
 import {Row, Col, Container} from 'react-bootstrap'
 import ShopItem from '../components/ShopItem'
 
-async function getProduse(){
-    try {
-        let response = await fetch('https://6081334d73292b0017cdcea7.mockapi.io/shop');
-        let responseJson = await response.json();
-        return responseJson['0']['Produse'];
-   } catch(error) {
-    console.error(error);
-  }
-}
-
 
 function MarketPage()
 {
