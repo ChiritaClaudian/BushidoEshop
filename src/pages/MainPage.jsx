@@ -11,9 +11,11 @@ import karateImage from '../resources/Karate.png'
 import judoImage from '../resources/Judo.png'
 import mmaImage from '../resources/MMA.png'
 import kickboxImage from '../resources/Kickbox.png'
+import {useHistory} from 'react-router-dom'
 
 function MainPage()
 {
+    let history = useHistory();
     return (
         <React.Fragment>
             
@@ -41,7 +43,7 @@ function MainPage()
                     </Row>
                     <Row className="justify-content-md-center">
                         <Col className="d-flex justify-content-center">
-                            <Button variant="outline-dark" className={classes.featureButton}>Shop now</Button>{''}
+                            <Button variant="outline-dark" className={classes.featureButton} onClick={()=>{history.push("/Market");}}>Shop now</Button>{''}
                         </Col>
                     </Row>
                 </Container>
@@ -55,18 +57,18 @@ function MainPage()
                     
                     <Row >
                         <Col md={6} sm={12} >
-                            <CategoryImage category="karate" image={karateImage} header="KARATE"/>
+                            <CategoryImage category="Box" image={karateImage} header="BOX"/>
                         </Col>
                         <Col md={6} sm={12} >
-                            <CategoryImage category="mma" image={mmaImage} header="MMA"/>
+                            <CategoryImage category="MMA" image={mmaImage} header="MMA"/>
                         </Col>
                     </Row>
                     <Row  >
                         <Col md={6} sm={12} >
-                            <CategoryImage category="kickbox" image={kickboxImage} header="KICKBOX"/>
+                            <CategoryImage category="Kickbox" image={kickboxImage} header="KICKBOX"/>
                         </Col>
                         <Col md={6} sm={12} >
-                            <CategoryImage category="judo" image={judoImage} header="JUDO"/>
+                            <CategoryImage category="Judo" image={judoImage} header="JUDO"/>
                         </Col>
                     </Row>
                 </Container>

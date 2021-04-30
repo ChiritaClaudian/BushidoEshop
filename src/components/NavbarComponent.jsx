@@ -18,10 +18,10 @@ function NavbarComponent(props)
             <Link to="/login" className="nav-link">Login</Link>
             
             <NavDropdown title="Categorii" id="basic-nav-dropdown">
-              <Link to="/Market/judo" className="dropdown-item">Judo</Link>
-              <Link to="/Market/karate" className="dropdown-item">Karate</Link>
-              <Link to="Market/kickbox" className="dropdown-item">Kickbox</Link>
-              <Link to="/Market/mma" className="dropdown-item">MMA</Link>
+              <Link to="/Market/Judo" className="dropdown-item">Judo</Link>
+              <Link to="/Market/Box" className="dropdown-item">Box</Link>
+              <Link to="/Market/Kickbox" className="dropdown-item">Kickbox</Link>
+              <Link to="/Market/MMA" className="dropdown-item">MMA</Link>
             </NavDropdown>
           </Nav>
           

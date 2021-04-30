@@ -9,41 +9,58 @@ function FooterComponent()
             <hr></hr>
             <Container fluid="md" className=" align-self-center justify-content-md-center ">
                 <Row className="justify-content-md-center ">
-                    <hr/>
+                    
                     <Col className="justify-content-md-center ">
-                        <hr/>
-                        <h5 style={{margin:"5%"}}>
-                            Navigate
-                        </h5>
-                        {/* Aici ar trb sa fie o lista cu link-uri cu Shop About us si Home Page*/}
-                        <p>
-                            <Link to={()=>{
+                    <Row className="d-flex flex-column">
+                        
+                            <Col sm={2} style={{margin:'1%'}}>
+                                <h5 style={{margin:"5%"}}>
+                                   Navigate
+                                </h5>
+                            </Col>
+                            
+                            <Col sm={2} style={{margin:'1%'}}>
+                                <Link to={()=>{
                                 window.scrollTo(0,0);
                                 return "/";
-                            }}>Home Page</Link>
-                        </p>
-                        <p>
-                            <Link to={()=>{
+                            }}>Home</Link>
+                            </Col>
+                            <Col sm={2} style={{margin:'1%'}}>
+                                <Link to={()=>{
                                 window.scrollTo(0,0);
                                 return "/Market";
-                            }}>Market place</Link>
-                        </p>
-                        <p>
-                            <Link to={()=>{
+                            }}>Market</Link>
+                            </Col>
+                            <Col sm={2} style={{margin:'1%'}}>
+                                <Link to={()=>{
                                 window.scrollTo(0,0);
                                 return "/About";
                             }}>About us</Link>
-                        </p>
+                            </Col>
+                            
+                        </Row>
+                        
                     </Col>
                     <Col >
-                        <hr/>
-                        <h5 style={{margin:"5%"}}> Categories</h5>
-                        <p>
-                            Karate
-                        </p>
-                        <p>Judo</p>
-                        <p>Kickbox</p>
-                        <p>MMA</p>
+                        <Row className="d-flex flex-column">
+                        
+                            <Col sm={2} style={{margin:'1%'}}>
+                                <h5 style={{margin:"5%"}}> Categories</h5>
+                            </Col>
+                            
+                            <Col sm={2} style={{margin:'1%'}}>
+                                <Link to="/Market/Judo" >Judo</Link>
+                            </Col>
+                            <Col sm={2} style={{margin:'1%'}}>
+                                <Link to="/Market/Box" >Box</Link>
+                            </Col>
+                            <Col sm={2} style={{margin:'1%'}}>
+                                <Link to="/Market/Kickbox" >Kickbox</Link>
+                            </Col>
+                            <Col sm={2} style={{margin:'1%'}}>
+                                <Link to="/Market/MMA" >MMA</Link>
+                            </Col>
+                        </Row>
                     </Col>
                 </Row>
 

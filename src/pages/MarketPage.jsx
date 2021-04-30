@@ -1,12 +1,15 @@
 import React, {useState, useEffect} from 'react'
 import {Row, Col, Container} from 'react-bootstrap'
 import ShopItem from '../components/ShopItem'
+import {useLocation} from 'react-router-dom'
 
 
 function MarketPage()
 {
 
     const [data, setData]=useState([]);
+    let category;
+    let location = useLocation();
     const getData=()=>{
         fetch('https://6081334d73292b0017cdcea7.mockapi.io/shop')
             .then(function(response){
@@ -22,8 +25,10 @@ function MarketPage()
         getData()
     }, []);
     
-   
-
+    category=location.pathname.split("/")[2];
+    if(category===undefined)
+        category="all";
+    console.log(location.pathname.split("/")[2])
     
     return(
         <div>
@@ -40,7 +45,7 @@ function MarketPage()
                 </Row>
                 <div className="d-flex flex-column">
                     <Row >
-                      {data && data.length>0 && data[0]['Produse'].map((obj) => <Col key={obj.id} md={4} sm={6}><ShopItem image={obj.src} alt={obj.alt} name={obj.nume} reviews={obj.reviews} price={obj.pret}/></Col>)} 
+                      {data && data.length>0 && data[0]['Produse'].filter((obj) =>{if(category === obj.categorie || category==="all") return obj; else return null}).map((obj) => <Col key={obj.id} md={4} sm={6}><ShopItem image={obj.src} alt={obj.alt} name={obj.nume} reviews={obj.reviews} price={obj.pret}/></Col>)} 
                     </Row>
                 </div>
                 

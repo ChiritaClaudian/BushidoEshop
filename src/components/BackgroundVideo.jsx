@@ -18,19 +18,21 @@ function BackgroundVideo(props)
         return(
             <div className={classes.container}>
                 <img src={backgroundImage} style={{width:'100%'}} alt="poza cu bushido"/>
-                <Container fluid="md" className=" align-self-center justify-content-md-center " style={{position:'absolute'}}>
-                    <Row className="py-auto justify-content-md-center ">
+                <Container fluid={true} style={{position:'absolute'}}>
+                    <Row className="py-auto justify-content-center ">
                         <Col md="auto" >
                             <p style={{margin:"15%"}} className={classes.content}>
                                 Welcome to the Bushido E-shop 
                             </p>
                         </Col>
                     </Row>
-                    <Row className="justify-content-md-center">
-                        <Col className={classes.buttons}>
+                    <Row className="justify-content-center" noGutters={true}>
+                        <Col sm={6} className="d-flex justify-content-center " style={{margin:'1%'}}>
                             <Button variant="light" style={{margin:"1%"}} onClick={()=>{history.push("/Market");}}>
                                 Shop Now
                             </Button>{' '}
+                        </Col>
+                        <Col sm={6} className="d-flex justify-content-center" style={{margin:'1%'}}>
                             <Button variant="light" style={{margin:"1%"}} onClick={()=>{history.push("/About");}}>
                                 Learn more
                             </Button>{' '}
