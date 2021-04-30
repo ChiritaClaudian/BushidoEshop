@@ -1,5 +1,4 @@
 import React from 'react'
-import classes from '../modules/PopUpShop.module.css'
 import {Row, Col, Modal,Button} from 'react-bootstrap'
 import {BiEuro} from 'react-icons/bi'
 function ShopModal(props)
@@ -12,7 +11,7 @@ function ShopModal(props)
             <Modal.Body>
                 <Row>
                     <Col>
-                        <img src={props.src} style={{width:'90%'}}/>
+                        <img src={props.src} style={{width:'90%'}} alt="poza cu produsul"/>
                     </Col>
                     <Col>
                         <Row className='d-flex flex-column'>

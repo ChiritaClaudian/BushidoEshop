@@ -24,7 +24,7 @@ function AdminPage(){
             </h3>
             <div className="d-flex flex-column" >
                 <Row noGutters={true}>
-                    {data && data.length>0 && data.map((obj) => <Col sm={{ span: 0.6}} style={{marginBottom:'0.5%'}} key={obj.id} sm={12}><UserComponent id={obj.id} username={obj.nume +' '+obj.prenume} email={obj.email}/></Col>)} 
+                    {data && data.length>0 && data.map((obj) => <Col sm={{ span: 0.6}} style={{marginBottom:'0.5%'}} key={obj.id}><UserComponent id={obj.id} username={obj.nume +' '+obj.prenume} email={obj.email}/></Col>)} 
                 </Row>
             </div>
         </div>

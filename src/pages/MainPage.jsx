@@ -1,6 +1,4 @@
 import React from "react"
-import NavBar from "../components/NavbarComponent"
-import FooterComponent from "../components/FooterComponent"
 import BackgroundVideo from "../components/BackgroundVideo"
 import { Container, Row, Col, Button } from 'react-bootstrap'
 import FeatureCard from "../components/FeatureCard"

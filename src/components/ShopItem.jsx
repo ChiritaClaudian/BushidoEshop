@@ -6,8 +6,6 @@ import ShopModal from './ShopModal'
 
 function ShopItem(props)
 {
-    const reviewsText = `(${props.reviews} Reviews)` 
-    const priceText = `Starting at ${props.price}`
     const [isHover, setHover] = useState(false);
     const [seen, setSeen] = useState(false);
     return(

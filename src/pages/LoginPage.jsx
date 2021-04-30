@@ -1,6 +1,5 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-import {AiOutlineUser} from 'react-icons/ai'
 
 function LoginPage(){
     return(

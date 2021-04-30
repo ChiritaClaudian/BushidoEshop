@@ -12,18 +12,12 @@ import { useHistory } from "react-router-dom"
 function BackgroundVideo(props)
 {
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
-    const imageStyle = {
-        backgroundImage: `url(${backgroundImage})`, 
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat'
-    }
     const history = useHistory();
     
     if(isTabletOrMobile)
         return(
             <div className={classes.container}>
-                <img src={backgroundImage} style={{width:'100%'}}/>
+                <img src={backgroundImage} style={{width:'100%'}} alt="poza cu bushido"/>
                 <Container fluid="md" className=" align-self-center justify-content-md-center " style={{position:'absolute'}}>
                     <Row className="py-auto justify-content-md-center ">
                         <Col md="auto" >

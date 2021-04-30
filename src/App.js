@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import MarketPage from './pages/MarketPage'
 import AboutPage from './pages/AboutPage'

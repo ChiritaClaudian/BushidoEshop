@@ -31,7 +31,7 @@ function CategoryImage(props)
                     onMouseLeave={()=>setHover(false)} >
                 <div style={isHovered || isTabletOrMobile ? containerWithOpacity : {}} 
                     >
-                    <img src={props.image} style={{width:'100%'}}/>
+                    <img src={props.image} style={{width:'100%'}} alt="imagine cu categoria"/>
                 </div>
                 
                 <div style={isHovered || isTabletOrMobile ? itemsVisible:{display:'none'}} className="d-flex flex-column ">
