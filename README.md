@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# Tema de casa Web
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Proiect realizat pentru cursul de Tehnologii Web.
 
-## Available Scripts
+## Descriere generala
 
-In the project directory, you can run:
+Proiectul consta intr-un magazin online cu articole sport realizat folosind framework-ul React.
 
-### `npm start`
+Fiecare pagina contine un navbar si un footer care ofera utilizatorului posibilitatea de a naviga mai usor.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Home page
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Pagina principala care contine:
+-un background video, cand pagina este incarcata de pe un dispozitiv mobil video-ul este inlocuit cu o imagine
+-3 cartonase cu informatii
+-4 componente create pentru a redirectiona utilizatorul pe pagina de market la categoria aleasa. Cand utilizatorul pune cursorul peste o componenta background-ul acesteia se blureaza si apare un buton, in cazul in care pagina este incarcata de pe un dispozitiv mobil background si butonul de pe componenta apar din start.
 
-### `npm test`
+### Market page
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Pagina care afiseaza produsele obtinute dintr-un request la un mock api. Fiecare produs este afisat prin intermediu unei componente care cuprinde imaginea produsului si informatii despre acesta, cand un utilizator apasa pe aceasta componenta apare un modal care ofera mai multe informatii despre produs. Produsele din aceasta pagina pot sa fie filtrate adaugand la url categoria dupa care se doreste sa se filtreze pagina, de exemplu calea "Market/Judo" va afisa toate produsele din categoria Judo
 
-### `npm run build`
+###Login/Register Page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Paginile care permit utilizatorului sa se logeze sau inregistreze. Pagina de inregistrare este disponibila din pagina de logare apasand link ul din mesajul "Don't have an account, register now!"
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+###Admin Page
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Pagina de admin este valabila la path-ul "/admin", aceasta listeaza toti utilizatorii inregistrati si ofera optiunile de schimbare a username-ului, a parolei si stergerea contului.
