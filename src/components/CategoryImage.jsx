@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import {Button} from 'react-bootstrap'
 import {useMediaQuery} from 'react-responsive'
+import {useHistory} from 'react-router-dom'
 import 'bootstrap'
 
 function CategoryImage(props)
@@ -22,8 +23,8 @@ function CategoryImage(props)
         position: 'absolute'
 
     }
+    const history = useHistory();
 
-    
     const [isHovered, setHover] = useState(false);
     return(
         <div style={{position:"relative"}} >
@@ -39,7 +40,7 @@ function CategoryImage(props)
                     <h3 style={{color:'white'}}>
                         {props.header}
                     </h3>
-                    <Button variant='outline-light'> Shop </Button>{' '}
+                    <Button variant='outline-light' onClick={()=>{history.push("/Market/" +props.category);}}> Shop </Button>{' '}
                 </div>
                 
             </div>

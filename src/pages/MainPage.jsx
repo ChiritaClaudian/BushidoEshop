@@ -55,18 +55,18 @@ function MainPage()
                     
                     <Row >
                         <Col md={6} sm={12} >
-                            <CategoryImage image={karateImage} header="KARATE"/>
+                            <CategoryImage category="karate" image={karateImage} header="KARATE"/>
                         </Col>
                         <Col md={6} sm={12} >
-                            <CategoryImage image={mmaImage} header="MMA"/>
+                            <CategoryImage category="mma" image={mmaImage} header="MMA"/>
                         </Col>
                     </Row>
                     <Row  >
                         <Col md={6} sm={12} >
-                            <CategoryImage image={kickboxImage} header="KICKBOX"/>
+                            <CategoryImage category="kickbox" image={kickboxImage} header="KICKBOX"/>
                         </Col>
                         <Col md={6} sm={12} >
-                            <CategoryImage image={judoImage} header="JUDO"/>
+                            <CategoryImage category="judo" image={judoImage} header="JUDO"/>
                         </Col>
                     </Row>
                 </Container>
